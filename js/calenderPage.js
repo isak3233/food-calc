@@ -75,7 +75,7 @@ function getCalenderCard(date) {
 
     let monthName = date.toLocaleString("sv-SE", { month: "long" })
     aLink.ariaLabel = `${date.getDate()} ${monthName}, redigera livsmedel`
-    aLink.href = `/html/foodSelector.html?date=${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+    aLink.href = `/food-calc/html/foodSelector.html?date=${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
 
     const h2 = document.createElement("h2")
     h2.textContent = date.getDate()
