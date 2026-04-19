@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+button {
+    font-family: inherit;
+}
+
+
+.food {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+#add-food-btn {
+    display: block;
+    margin: 1.5rem auto 0 auto; 
+    
+    padding: 0.9rem 1.4rem;      
+    font-size: 1.05rem;          
+    border-radius: 12px;         
+}
+#go-back-btn,
+#add-food-btn {
+    border: none;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#go-back-btn:hover,
+#add-food-btn:hover {
+    background: #dbeafe;
+    border-color: #3b82f6;
+}
+
+
+
+#selected-foods > div {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#selected-foods h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.slider {
+    width: 100%;
+    accent-color: #3b82f6;
+    margin: 0.5rem 0;
+}
+
+.grams {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+#selected-foods span {
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.kcalCalc {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.kcalAPI {
+    color: #64748b;
+}
+
+.remove-button {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+
+    border: none;
+    background: #fee2e2;
+    color: #991b1b;
+
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.remove-button:hover {
+    background: #fecaca;
+}
+
+
+
+.food-search {
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+
+.food-search-window {
+    margin-top: 10vh;
+
+    background: #ffffff;
+    padding: 0.8rem;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    position: relative;
+
+    width: min(600px, 90vw);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+#food-search-input {
+    height: 40px;
+    flex: 1;
+    min-width: 0;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+
+#food-search-btn {
+    height: 40px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+
+    padding: 0 1rem;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+#food-search-btn:hover {
+    background: #2563eb;
+}
+
+/* CLOSE BUTTON */
+#food-search-closer-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+
+    background: white;
+    border-radius: 50%;
+    border: none;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.food-search-closer-img {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+#food-search-result {
+    width: min(600px, 90vw);
+    max-height: 60vh;
+    overflow-y: auto;
+
+    margin-top: 1rem;
+}
+
+.food-search-result-div {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+
+    padding: 0.8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-search-result-div:hover {
+    background: #f1f5f9;
+}
+
+.food-search-result-div button {
+    border: none;
+    background: #3b82f6;
+    color: white;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.food-search-img {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    transform: rotate(45deg);
+}
+
+
+
+.deactive {
+    display: none;
+}
+#total-calories {
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#total-calories h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+#total-calories span {
+    font-size: 0.9rem;
+    color: #475569;
+}

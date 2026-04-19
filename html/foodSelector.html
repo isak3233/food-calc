@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/foodSelectorPage.css">
+    <script src="../js/foodSelectorPage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="food">
+        <button id="go-back-btn">Gå tillbaka</button>
+        <header>
+            <h1 id="day-title"></h1>
+        </header>
+        <div id="selected-foods">
+            <!-- Skriver ut genom js -->
+        </div>
+        <button id="add-food-btn">Lägg till ett livsmedel</button>
+        <div id="total-calories">
+            <h3>Total</h3>
+            <span>Beräknad kcal: <span id="total-kcal-calc">0</span></span><br>
+            <span>Kcal från livsmedelverket: <span id="total-kcal-api">0</span></span>
+        </div>
+        <div id="food-search-div" class="food-search deactive">
+            <div class="food-search-window">
+                <input type="text" id="food-search-input" type="">
+                <button id="food-search-btn">Sök</button>
+                <button id="food-search-closer-btn">
+                    <img class="food-search-closer-img" src="../imgs/x-thin.svg" alt="bild på ett X">
+                </button>
+            </div>
+            <div id="food-search-result">
+                <!-- Skriver ut genom js -->
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

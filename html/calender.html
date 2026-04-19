@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calenderPage.css">
+    <script defer src="../js/calenderPage.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="calender" id="page">
+        <header class="calender-header">
+            <h1 class="calender-title">Matplaneraren</h1>
+        </header>
+        <div class="month-header">
+            <button id="prev-month" class="left-arrow" aria-label="Föregående månad">
+                <img src="../imgs/arrow.svg" alt="bild på en pil som pekar vänster">
+            </button>
+            <h2 id="selected-month"></h2>
+            <button id="next-month" aria-label="Nästa månad">
+                <img class="right-arrow" src="../imgs/arrow.svg" alt="bild på en pil som pekar höger">
+            </button>
+        </div>
+        <ul class="calender-weekdays">
+            <li>Måndag</li>
+            <li>Tisdag</li>
+            <li>Onsdag</li>
+            <li>Torsdag</li>
+            <li>Fredag</li>
+            <li>Lördag</li>
+            <li>Söndag</li>
+        </ul>
+
+
+        <section class="calender-days" id="calender-days">
+            <!-- Skriver ut genom js -->
+        </section>
+    </div>
+</body>
+
+</html>
