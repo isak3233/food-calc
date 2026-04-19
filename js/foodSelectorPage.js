@@ -23,14 +23,14 @@ const pageDate = params.get("date")
 
 function parseSafeDate(dateString) {
     if (!/^\d{4}-\d{1,2}-\d{1,2}$/.test(dateString)) {
-        window.location.href = `/html/calender.html`
+        window.location.href = `/food-calc/html/calender.html`
     }
 
     const [y, m, d] = dateString.split("-").map(Number);
     const date = new Date(y, m - 1, d);
 
     if (isNaN(date.getTime())) {
-        window.location.href = `/html/calender.html`
+        window.location.href = `/food-calc/html/calender.html`
     }
 
     return date;
@@ -49,7 +49,7 @@ function getDayString() {
 function goBackToCalender() {
     const params = new URLSearchParams(window.location.search);
     const date = params.get("date");
-    window.location.href = "/html/calender.html?date=" + date
+    window.location.href = "/food-calc/html/calender.html?date=" + date
 }
 async function getAllFood() {
     const response = await fetch(
